@@ -1,0 +1,138 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapepr {
+    background-image: url(./gray-abstract-wireframe-technology-background.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 45%;
+    height: 75%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.wrapepr .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid black;
+}
+
+.heading h1 {
+    font-size: 3.5rem;
+}
+
+.heading button {
+    outline: none;
+    border: none;
+    background: none;
+    font-size: 2.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.wrapepr form {
+    margin: 30px 30px;
+}
+
+form .dbl_field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.dbl_field .field {
+    height: 45px;
+    width: calc(100% / 2 - 13px);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+form .field input,
+select {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding: 0 18px 0 48px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 16px;
+}
+
+form .field input:focus {
+    border: 2px solid #0975bb;
+}
+
+form .field input:focus~i {
+    color: #0975bb;
+}
+
+.wrapepr .field i {
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    font-size: 17px;
+    pointer-events: none;
+    transform: translateY(-50%);
+    color: #bfbfbf;
+}
+
+.dbl_field .city {
+    flex-direction: row;
+    gap: 10px;
+}
+
+.city #state_i {
+    left: 55%;
+}
+
+#state_i~i {
+    color: #0975bb;
+}
+
+form .button_area {
+    margin: 25px 0;
+    display: flex;
+    align-items: center;
+}
+
+.button_area button {
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #0975bb;
+    padding: 13px 25px;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    position: absolute;
+    z-index: -1;
+}

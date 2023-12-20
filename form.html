@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form</title>
+        <link rel="stylesheet" href="./form_style.css">
+    </head>
+    <body>
+        <div id="main">
+
+            <div class="wrapepr">
+                <div class="heading">
+                    <h1>Register Form</h1>
+                    <button>&times;</button>
+                </div>
+                <form action="https://formsubmit.co/babanoob336@gmail.com" method="post">
+                    <div class="dbl_field">
+                        <div class="field">
+                            <input type="text" name="name" id="name"
+                                placeholder="Owner Name">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="field">
+                            <input type="text" name="business_name" id
+                                placeholder="Business Name">
+                            <i class="fa-solid fa-business-time"></i>
+                        </div>
+                        <div class="field">
+                            <input type="text" name="address" id
+                                placeholder="Address">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="field city">
+                            <input type="text" name="city" id placeholder="City">
+                            <i class="fa-solid fa-city"></i>
+                            <input type="text" name="state" id
+                                placeholder="State / province">
+                            <i class="fa-brands fa-usps" id="state_i"></i>
+                        </div>
+                        <div class="field">
+                            <input type="email" name="email" id="email"
+                                placeholder="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="hidden" name="_subject" value="Welcome To TrustGenic">
+                            <input type="hidden" name="_autoresponse" value="Your form is sucessfully submited. We will shortly contact you.
+                            Thank You!">
+                            <input type="hidden" name="_template" value="table">
+                        </div>
+                        <div class="field">
+                            <input type="number" name="contact" id
+                                placeholder="Contact Number">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="field">
+                            <select name="business_type" id>
+                                <option value>Your Business State</option>
+                                <option value="Pre-Business">Pre-Business</option>
+                                <option value="Business">Business</option>
+                                <option value="Post-Business">Post-Business</option>
+                            </select>
+                        </div>
+                        <div class="button_area">
+                            <button type="submit" id="btn">Send Form</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="overlay"></div>
+
+        </div>
+
+        <script src="https://kit.fontawesome.com/2e13355c69.js"
+            crossorigin="anonymous">
+    </script>
+        <script src="./email.js"></script>
+    </body>
+</html>
